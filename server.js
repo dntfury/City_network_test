@@ -467,5 +467,5 @@ app.post('/user', async (req,res)=>{
 // START
 const port = process.env.PORT || 3001;
 app.listen(port,() => {
-    console.log("Serve is listning at " + port);
+    console.log("Listning at " + port);
 });
