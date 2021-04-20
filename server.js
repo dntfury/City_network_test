@@ -67,15 +67,15 @@ app.get('/forum', async (req, res) => {
     try
 	{
 		const [result,fields] = await db.promise().query('SELECT * from forum');// getting data from DB
-		res.status(200).json({ 
+        res.status(200).json({ 
 			data: {
 			  forum_list: result
 			}
 		  })
 	}
-	catch{error}
+	catch(error)
 	{
-		console.log("Error in getting data form   database ");
+		console.log("Error in getting data form database ");
 		console.log(error);
 		res.status(500).send("500: Internal Server Error");	
 	}
@@ -96,7 +96,7 @@ app.get('/post',  async (req, res) => {
 			}
 		  })
 	}
-	catch{error}
+	catch(error)
 	{
 		console.log("Error in getting data form   database ");
 		console.log(error);
@@ -117,7 +117,7 @@ app.get('/user', async (req, res) => {
 			}
 		  })
 	}
-	catch{error}
+	catch(error)
 	{
 		console.log("Error in getting data form   database ");
 		console.log(error);
@@ -460,12 +460,8 @@ app.post('/user', async (req,res)=>{
 
 
 
-
-
-
-
-// START
+//START
 const port = process.env.PORT || 3001;
 app.listen(port,() => {
-    console.log("Listning at " + port);
+    console.log("Serve is listning at " + port);
 });
