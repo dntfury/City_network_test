@@ -30,7 +30,15 @@ REST API for forum
 
 
 ## Screenshot of the project and postman
+- SSH pic
+![Screenshot](ssh_pic.png)
 
+- Postman pic
+
+![Screenshot](img_1.png)
+![Screenshot](img_2.png)
+![Screenshot](img_3.png)
+![Screenshot](img_4.png)
 
 
 **********************************************************************************************************************************
