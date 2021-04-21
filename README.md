@@ -85,51 +85,50 @@ To run the application pm2 is used and to check the service is running(daemon) u
 please follow through the comment in the program file server.js
 
 
+********************************************************************************
+
 
                             Task 1
-GET Request
-	GET /forum
-	GET /post
-	GET /user
-	GET /forum/<id>
-	GET /post/<id>
-	GET /user/<id>
-
+            GET Request
+            	GET /forum
+            	GET /post
+            	GET /user
+            	GET /forum/<id>
+            	GET /post/<id>
+            	GET /user/<id>
+            
+********************************************************************************
 
                             Task 2,7
-DELETE Request
-	DELETE /forum/<id>
-                    If this request is called than the forum with provide id id deleted
-	                And also delete all the post related to that specicif forum_id to keep database clean and consistent. 
-	                This will in provide also satisfy the TASK #7
+            DELETE Request
+            	DELETE /forum/<id>
+            If this request is called than the forum with provide id id deleted And also delete all the post related to that specicif forum_id to keep database clean and consistent. This will in provide also satisfy the TASK #7
 
-	DELETE /post/<id>
+	            DELETE /post/<id>
+********************************************************************************
                     
                             Task 3
-PUT Request
-	PUT /forum/<id>
-	PUT /post/<id>
+                    
+                    PUT Request
+                    	PUT /forum/<id>
+                    	PUT /post/<id>
 
 
+********************************************************************************
 
                             Task 4
-POST Request
-	POST /forum
-	POST /post
+    POST Request
+    	POST /forum
+    	POST /post
 
 		datetime will be according to current timme
-		Date time is taken but not used the datatime will be set by itself 
-		since a specfic foramte is needed and if not the request is failed by DB 
-		So keeping in mind it has been done and if data time is passed correctly 
-		Than commet the currentTime variable and in SQL query insteed of it pass the data1.created parameter it will work fine 
-
-		The function is also cheking if there is post is having correct forum_id to keep data consistent and same could be done for user_id 
-		but according to the task no such details have been provided so it was not done and 
-		There is a scope of improving DB by foreign key but it may very well deviate from current tasks
+		Date time is taken but not used the datatime will be set by itself since a specfic foramte is needed and if not the request is failed by DB so keeping in mind it has been done and if data time is passed correctly 
+		Than commet the currentTime variable and in SQL query insteed of it pass the data1.created parameter it will work fine. The function is also cheking if there is post is having correct forum_id to keep data consistent and same could be done for user_id but according to the task no such details have been provided so it was not done and there is a scope of improving DB by foreign key but it may very well deviate from current tasks
 		so it is not done to satisft the provided task which are neccessary for test but via comment 
 		it to be noted that the point was noticed.   
 
 	POST /user
 
+********************************************************************************
 
 
