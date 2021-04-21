@@ -455,9 +455,17 @@ app.post('/user', async (req,res)=>{
 });
 
 
+/*
+this also work fine  uncommet this and commet the // START one if need
+var http = require('http');
 
+var server = http.createServer(app);
 
+    server.listen(3000, function(){
+        console.log("server running at https://127.0.0.1:3000/")
+    });
 
+*/
 
 
 //START
@@ -465,3 +473,4 @@ const port = process.env.PORT || 3001;
 app.listen(port,() => {
     console.log("Serve is listning at " + port);
 });
+
